@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "strict": true,
+        "jsx": "react-jsx",
+        "sourceMap": false,
+        "useDefineForClassFields": true,
+        "resolveJsonModule": true,
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "typeRoots": ["node_modules/@types", "node_modules/jest/types"],
+        "types": ["jest", "node", "vite/client", "react-dom", "react", "tailwindcss"],
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+    },
+    "include": [
+        "vite.config.ts",
+        "packages/renderer/**/*.ts",
+        "packages/renderer/**/*.jsx",
+        "packages/renderer/**/*.tsx",
+        "packages/renderer/**/*.js",
+        "src/**/*.ts",
+        "src/**/*.js",
+        "src/**/*.d.ts",
+        "src/**/*.tsx", "src/**/*.jsx", "src/App.tsx", "src/views/About.jsx", "src/views/Home.tsx",
+    ],
+    "exclude": ["node_modules", "dist", "public", "tests", "scripts", "packages/renderer/dist"],
+}
