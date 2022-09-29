@@ -8,18 +8,18 @@ Template Setup: run `node configure-package.js` to configure.
 
 ---
 
-## `Vite 2.x + Vue 3.x + Tailwind 3.x + Typescript 4.x starter ⚡`
+## `Vite 3.x + React 18.x + Tailwind 3.x + Typescript 4.x starter ⚡`
 
-![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)
+<!--![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)-->
 
 This starter template also includes:
 
-- [Vue Router 4.x](https://github.com/vuejs/vue-router-next)
-- [Vuex 4.x](https://github.com/vuejs/vuex-next)
+- React Router
+- MobX
 - [Inter var font](https://github.com/rsms/inter) (self-hosted, woff2, v3.19, with 'preload' attr, check out index.html)
 - [TailwindCSS JIT](https://tailwindcss.com/docs/just-in-time-mode) mode by default introduced in Tailwind CSS v2.1 (in preview!)
-- [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
-- [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
+- [Headless UI](https://headlessui.dev/react/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
+- [Heroicons](https://github.com/tailwindlabs/heroicons#react) - beautiful hand-crafted SVG icons,
 by the makers of Tailwind CSS
 
 First-party plugins needed for Tailwind UI:

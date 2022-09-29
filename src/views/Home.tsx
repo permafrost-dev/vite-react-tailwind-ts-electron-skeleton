@@ -1,4 +1,5 @@
 import ButtonRepo from '@/components/ButtonRepo';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
                 <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
                     Ready to dive in?
                     <br />
-                    <span className="text-indigo-600">Vite 3.x + React 18.x + Tailwind 3.x</span>
+                    <span className="text-indigo-600">Vite 3.x + React 18.x + Tailwind 3.x + Typescript 4.x</span>
                 </h2>
                 <div className="flex mt-8 lg:flex-shrink-0 lg:mt-0">
                     <div className="inline-flex rounded-md shadow">
