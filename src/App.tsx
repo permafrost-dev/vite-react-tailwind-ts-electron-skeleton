@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from './views/About';
 import Home from './views/Home';
-import NotFound from './views/NotFound';
+//import NotFound from './views/NotFound';
 
 export default function App() {
     //const [count, setCount] = useState(0);
@@ -36,7 +36,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Home />} />
         </Routes>
     );
 }

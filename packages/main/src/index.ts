@@ -29,9 +29,25 @@ let mainWindow: BrowserWindow | null = null;
 
 const createWindow = async () => {
     mainWindow = new BrowserWindow({
-        show: false, // Use 'ready-to-show' event to show window
+        //show: true, // Use 'ready-to-show' event to show window
+        width: 500,
+        height: 400,
+        minWidth: 500,
+        minHeight: 400,
+        resizable: true,
+        // titleBarOverlay: true,
+        // frame: true,
+        // titleBarStyle: 'hiddenInset',
+        title: 'My Electron App',
 
         webPreferences: {
+            //nodeIntegrationInWorker: true,
+            //enableRemoteModule: true,
+            //overlayScrollbars: true,
+            javascript: true,
+            webSecurity: false,
+            nodeIntegration: true,
+            contextIsolation: false,
             //nativeWindowOpen: true,
             preload: join(__dirname, '../../preload/dist/index.cjs'),
         },
@@ -43,7 +59,7 @@ const createWindow = async () => {
      *
      * @see https://github.com/electron/electron/issues/25012
      */
-    mainWindow.on('ready-to-show', () => {
+    mainWindow.on('ready-to-show', async () => {
         mainWindow?.show();
 
         if (import.meta.env.MODE === 'development') {

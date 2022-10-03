@@ -22,7 +22,7 @@
     "scripts": {
         "build": "vite build",
         "build:el": "MODE=development node scripts/build.js",
-        "compile": "electron-builder build --config electron-builder.config.js --dir --config.asar=false",
+        "compile": "MODE=development electron-builder build --config electron-builder.config.js --dir --config.asar=false",
         "dev": "vite --host",
         "fmt": "prettier --config prettier.config.js --write 'src/**/*.{js,ts,json,yml,yaml,vue}' 'tests/**/*.{js,ts,json,yml,yaml,vue}' './*.{js,yml,yaml,json,md,html}'",
         "lint": "eslint --ext ts,js src/",
@@ -30,7 +30,7 @@
         "lint:staged": "lint-staged",
         "precompile": "MODE=development npm run build",
         "serve": "vite preview",
-        "start:el": "npm run build && npm run build:el && npm run compile && ./dist/linux-unpacked/package-skeleton",
+        "start:el": "MODE=development npm run build && npm run build:el && npm run compile && ./dist/linux-unpacked/package-skeleton",
         "test": "jest tests --verbose",
         "test:coverage": "jest tests --coverage",
         "prepare": "husky install"
