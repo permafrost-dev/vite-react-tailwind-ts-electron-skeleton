@@ -48,7 +48,7 @@
         ]
     },
     "dependencies": {
-        "electron-updater": "^5.2.4",
+        "electron-updater": "^6.1.4",
         "electron-webpack": "^2.8.2",
         "mobx": "^6.6.2",
         "mobx-react": "^7.5.3",
